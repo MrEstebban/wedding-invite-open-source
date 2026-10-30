@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5d6b53"/>
+      <stop offset="0.55" stop-color="#8b9a7c"/>
+      <stop offset="1" stop-color="#c8d1bd"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1600" fill="url(#bg)"/>
+  <g fill="none" stroke="#faf8f4" stroke-opacity="0.35" stroke-width="3">
+    <circle cx="390" cy="760" r="70"/>
+    <path d="M300 1250c0-200 30-330 90-400"/>
+    <path d="M480 1250c0-200-30-330-90-400"/>
+    <circle cx="520" cy="740" r="70"/>
+    <path d="M430 1250c0-200 30-350 90-420"/>
+    <path d="M610 1250c0-200-30-350-90-420"/>
+  </g>
+  <text x="450" y="1400" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#faf8f4" fill-opacity="0.75">Reemplaza /public/images/hero.svg por su foto</text>
+</svg>
