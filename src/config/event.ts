@@ -54,13 +54,13 @@ export interface EventConfig {
 export const event: EventConfig = {
   locale: "es-MX",
   timeZone: "America/Mexico_City",
-  couple: { partner1: "Sarah", partner2: "Gabriel" },
-  date: "2026-08-31T20:00:00-06:00",
-  rsvpDeadline: "2026-07-31T23:59:59-06:00",
+  couple: { partner1: "Tefy", partner2: "Duvan" },
+  date: "2026-12-31T20:00:00-06:00",
+  rsvpDeadline: "2026-12-31T23:59:59-06:00",
   music: { src: "/audio/song.mp3" },
   images: {
-    hero: "/images/hero.svg",
-    quote: "/images/quote.svg",
+    hero: "/images/hero.jpeg",
+    quote: "/images/quote.png",
   },
   quote: {
     text: "Cuando te das cuenta de que quieres pasar el resto de tu vida con alguien, deseas que el resto de tu vida comience cuanto antes.",
