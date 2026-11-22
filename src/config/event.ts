@@ -40,7 +40,7 @@ export interface EventConfig {
 export const event: EventConfig = {
   locale: "es-MX",
   timeZone: "America/Mexico_City",
-  couple: { partner1: "Tefy", partner2: "Duvan" },
+  couple: { partner1: "Tefy", partner2: "Mario" },
   date: "2026-12-31T20:00:00-06:00",
   rsvpDeadline: "2026-12-31T23:59:59-06:00",
   music: { src: "/audio/song.mp3" },
