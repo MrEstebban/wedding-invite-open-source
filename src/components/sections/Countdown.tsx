@@ -18,9 +18,9 @@ export function Countdown({ guest }: { guest: PublicGuest }) {
       </Reveal>
 
       <Reveal delay={300} className="mt-10">
-        <div className="rounded-sm bg-cream px-5 py-8 shadow-[0_14px_30px_-14px_rgb(0_0_0/0.3)]">
+        <div className="rounded-sm bg-white px-5 py-8 ring-1 ring-lilac shadow-[0_14px_30px_-14px_rgb(0_0_0/0.3)]">
           <p className="text-xl tracking-[0.15em] uppercase">{formatEventDate()}</p>
-          <div className="mx-auto my-5 h-px w-full bg-ink/20" />
+          <div className="mx-auto my-5 h-px w-full bg-sunflower-deep/70" />
           <CountdownTimer target={event.date} />
         </div>
       </Reveal>

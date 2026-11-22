@@ -5,7 +5,7 @@ import { formatShortDate } from "@/lib/dates";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-svh flex-col items-center justify-between overflow-hidden text-cream">
+    <section className="relative flex min-h-svh flex-col items-center justify-between overflow-hidden text-mist">
       <Photo src={event.images.hero} alt={`Fotografía de ${coupleNames}`} eager sizes="100vw" />
       <div className="absolute inset-0 bg-linear-to-b from-ink/60 via-ink/5 to-ink/60" aria-hidden="true" />
 

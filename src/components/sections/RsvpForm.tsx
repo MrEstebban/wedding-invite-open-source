@@ -17,7 +17,7 @@ interface RsvpFormProps {
 }
 
 const FIELD_CLASS =
-  "w-full rounded-lg bg-taupe/60 px-4 py-3 font-sans text-sm text-ink outline-none ring-sage placeholder:text-ink-soft/70 focus:ring-2 aria-[invalid=true]:ring-2 aria-[invalid=true]:ring-red-700/60";
+  "w-full rounded-lg bg-lilac-soft/60 px-4 py-3 font-sans text-sm text-ink outline-none ring-orchid placeholder:text-ink-soft/70 focus:ring-2 aria-[invalid=true]:ring-2 aria-[invalid=true]:ring-red-700/60";
 
 function initialChoice(guest: PublicGuest): Choice {
   if (guest.status === "attending") return "yes";
@@ -89,14 +89,14 @@ export function RsvpForm({ token, guest: initialGuest, open, deadline }: RsvpFor
       <div role="status" className="mt-8 space-y-4">
         {guest.status === "attending" ? (
           <>
-            <p className="font-script text-4xl text-sage-dark">¡Gracias!</p>
+            <p className="font-script text-4xl text-plum">¡Gracias!</p>
             <p className="text-lg">
               Confirmaste la asistencia de {peopleLabel(guest.confirmedGuests)}. ¡Nos vemos pronto!
             </p>
           </>
         ) : (
           <>
-            <p className="font-script text-4xl text-sage-dark">Te extrañaremos</p>
+            <p className="font-script text-4xl text-plum">Te extrañaremos</p>
             <p className="text-lg">Gracias por avisarnos. Te tendremos presente en este día tan especial.</p>
           </>
         )}
@@ -104,7 +104,7 @@ export function RsvpForm({ token, guest: initialGuest, open, deadline }: RsvpFor
         <button
           type="button"
           onClick={() => setState({ kind: "idle" })}
-          className="font-sans text-sm text-sage-dark underline underline-offset-4"
+          className="font-sans text-sm text-plum underline underline-offset-4"
         >
           Modificar respuesta
         </button>
@@ -156,7 +156,7 @@ export function RsvpForm({ token, guest: initialGuest, open, deadline }: RsvpFor
         Hemos reservado {seats} {seats === 1 ? "lugar" : "lugares"} en tu honor.
       </p>
       {responded && (
-        <p className="rounded-lg bg-sage-light/40 px-4 py-3 font-sans text-xs text-sage-dark">
+        <p className="rounded-lg bg-sunflower/70 px-4 py-3 font-sans text-xs text-ink">
           Ya recibimos tu respuesta ({describeResponse(guest)}). Puedes actualizarla hasta el {deadline}.
         </p>
       )}
@@ -260,7 +260,7 @@ export function RsvpForm({ token, guest: initialGuest, open, deadline }: RsvpFor
         <button
           type="submit"
           disabled={submitting}
-          className="rounded-lg bg-sage-dark px-8 py-3 font-sans text-sm text-cream transition hover:bg-sage disabled:cursor-wait disabled:opacity-60"
+          className="rounded-lg bg-plum px-8 py-3 font-sans text-sm text-mist transition hover:bg-orchid disabled:cursor-wait disabled:opacity-60"
         >
           {submitting ? "Enviando…" : responded ? "Actualizar respuesta" : "Enviar"}
         </button>

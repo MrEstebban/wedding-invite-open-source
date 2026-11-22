@@ -6,7 +6,7 @@ import { coupleNames, event } from "@/config/event";
 
 export function Quote() {
   return (
-    <SectionShell tone="cream">
+    <SectionShell tone="mist">
       <Reveal>
         <div className="relative mx-auto w-full max-w-sm">
           <div className="relative aspect-4/5 overflow-hidden rounded-sm shadow-xl">

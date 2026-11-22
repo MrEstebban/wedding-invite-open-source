@@ -3,7 +3,7 @@
 Invitación digital de boda, mobile-first y personalizada por invitado o familia, con confirmación de asistencia (RSVP) guardada en Google Sheets.
 
 - Sobre con sello de cera dirigido a cada invitado ("Ana María Espinoza · 2 personas").
-- Secciones a pantalla completa que aparecen al hacer scroll: portada, cuenta regresiva, cita, padres, ceremonia y recepción, itinerario, mesa de regalos, código de vestimenta, RSVP.
+- Secciones a pantalla completa que aparecen al hacer scroll: portada, cuenta regresiva, cita, padres, conferencia bíblica y recepción, código de vestimenta, RSVP. Estilo blanco con lila/morado y esquinas de girasoles y rosas moradas.
 - Enlaces seguros: `/invite/q8Zt3x0bJ4m1Yk9vR2cP7w` (token aleatorio de 128 bits, sin datos del invitado, revocable).
 - RSVP con límite de asistentes por invitado, fecha límite y posibilidad de actualizar la respuesta.
 - Música de fondo con botón flotante, compatible con móviles.

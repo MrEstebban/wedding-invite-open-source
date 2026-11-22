@@ -52,11 +52,10 @@ src/
 │  │  ├─ EnvelopeIntro.tsx      # sobre con sello de cera + nombre del invitado
 │  │  ├─ Hero.tsx               # foto de la pareja + nombres
 │  │  ├─ Countdown.tsx          # saludo personalizado + fecha + cuenta regresiva
-│  │  ├─ Quote.tsx, Parents.tsx, Venues.tsx, Itinerary.tsx
-│  │  ├─ Gifts.tsx, DressCode.tsx, NoKids.tsx
+│  │  ├─ Quote.tsx, Parents.tsx, Venues.tsx, DressCode.tsx
 │  │  ├─ Rsvp.tsx (servidor) + RsvpForm.tsx (cliente)
 │  │  └─ Closing.tsx
-│  ├─ ui/                       # Reveal, SectionShell, Photo, Floral, Icons, CopyButton, CountdownTimer, MessageScreen
+│  ├─ ui/                       # Reveal, SectionShell, Photo, Floral, Icons, CountdownTimer, MessageScreen
 │  └─ music/                    # MusicProvider (contexto + <audio>), MusicButton (flotante)
 ├─ config/event.ts              # contenido editable del evento
 └─ lib/

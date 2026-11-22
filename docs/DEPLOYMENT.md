@@ -34,7 +34,7 @@ Para probar enlaces en local, usa temporalmente `PUBLIC_BASE_URL=http://localhos
 
 ## 4. Personalizar el contenido
 
-- Textos, fechas, lugares, itinerario, cuentas, etc.: `src/config/event.ts`.
+- Textos, fechas, lugares, código de vestimenta, etc.: `src/config/event.ts`.
 - Fotos: reemplaza `public/images/hero.svg` y `quote.svg` por JPG/WebP (≥ 1600 px de alto para el hero) y actualiza `event.images`.
 - Música: `public/audio/song.mp3`.
 - Colores y fuentes: `src/app/globals.css` (`@theme`) y `src/app/layout.tsx`.

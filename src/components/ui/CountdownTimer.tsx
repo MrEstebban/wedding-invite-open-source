@@ -33,7 +33,7 @@ export function CountdownTimer({ target }: { target: string }) {
   const remaining = now === null ? null : Math.max(0, targetSeconds - now);
 
   if (remaining === 0) {
-    return <p className="font-script text-4xl text-sage-dark">¡Llegó el gran día!</p>;
+    return <p className="font-script text-4xl text-plum">¡Llegó el gran día!</p>;
   }
 
   const values = remaining === null ? null : splitDuration(remaining);

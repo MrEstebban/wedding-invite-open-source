@@ -6,8 +6,8 @@ import type { PublicGuest } from "@/lib/guest";
 
 export function Rsvp({ token, guest }: { token: string; guest: PublicGuest }) {
   return (
-    <SectionShell id="rsvp" tone="paper" florals>
-      <div className="rounded-sm bg-cream/95 px-5 py-12 shadow-xl sm:px-8">
+    <SectionShell id="rsvp" tone="white" florals>
+      <div className="rounded-sm bg-mist/95 px-5 py-12 shadow-xl sm:px-8">
         <Reveal>
           <SectionTitle top="Confirma" script="tu" bottom="asistencia" />
         </Reveal>

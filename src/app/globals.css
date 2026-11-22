@@ -6,20 +6,17 @@
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
+/* Paleta: Pantone 14-3812 TCX Pastel Lilac + morados, y Pantone 938 C (#FCEEA8) como acento amarillo. */
 @theme {
-  --color-paper: #f3efe9;
-  --color-cream: #faf8f4;
-  --color-taupe: #e6dfd5;
-  --color-sage-light: #c8d1bd;
-  --color-sage: #8b9a7c;
-  --color-sage-dark: #5d6b53;
-  --color-gold: #b8a26a;
-  --color-ink: #34332f;
-  --color-ink-soft: #6b6862;
-}
-
-@utility paper-texture {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.07'/%3E%3C/svg%3E");
+  --color-mist: #fcfbfe;
+  --color-lilac-soft: #f4f0f9;
+  --color-lilac: #bdb0d0;
+  --color-orchid: #8c6bb8;
+  --color-plum: #4f2d7f;
+  --color-sunflower: #fceea8;
+  --color-sunflower-deep: #e5b62e;
+  --color-ink: #141414;
+  --color-ink-soft: #444444;
 }
 
 html {
@@ -87,7 +84,7 @@ html {
 }
 
 .wax-seal {
-  background: radial-gradient(circle at 35% 30%, #e4d9ae 0%, #c6b67f 35%, #9a8a52 75%, #7d6f3e 100%);
+  background: radial-gradient(circle at 35% 30%, #c9b3ea 0%, #9a73cf 35%, #6b3fa0 75%, #4f2d7f 100%);
   box-shadow:
     inset 0 2px 4px rgb(255 255 255 / 0.4),
     inset 0 -4px 8px rgb(0 0 0 / 0.25),

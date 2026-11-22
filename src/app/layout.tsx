@@ -30,13 +30,13 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#f3efe9",
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="es" className={`${serif.variable} ${script.variable}`}>
-      <body className="bg-paper font-serif text-ink antialiased">{children}</body>
+      <body className="bg-white font-serif text-ink antialiased">{children}</body>
     </html>
   );
 }

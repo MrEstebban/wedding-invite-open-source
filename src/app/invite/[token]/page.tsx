@@ -5,10 +5,7 @@ import { Closing } from "@/components/sections/Closing";
 import { Countdown } from "@/components/sections/Countdown";
 import { DressCode } from "@/components/sections/DressCode";
 import { EnvelopeIntro } from "@/components/sections/EnvelopeIntro";
-import { Gifts } from "@/components/sections/Gifts";
 import { Hero } from "@/components/sections/Hero";
-import { Itinerary } from "@/components/sections/Itinerary";
-import { NoKids } from "@/components/sections/NoKids";
 import { Parents } from "@/components/sections/Parents";
 import { Quote } from "@/components/sections/Quote";
 import { Rsvp } from "@/components/sections/Rsvp";
@@ -40,10 +37,7 @@ export default async function InvitePage({ params }: InvitePageProps) {
         <Quote />
         <Parents />
         <Venues />
-        <Itinerary />
-        <Gifts />
         <DressCode />
-        <NoKids />
         <Rsvp token={token} guest={publicGuest} />
       </main>
       <Closing />

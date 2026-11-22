@@ -2,9 +2,9 @@ import type { ReactNode } from "react";
 import { Floral } from "@/components/ui/Floral";
 
 const TONES = {
-  paper: "bg-paper",
-  cream: "bg-cream",
-  taupe: "bg-taupe",
+  white: "bg-white",
+  mist: "bg-mist",
+  lilac: "bg-lilac-soft",
 } as const;
 
 interface SectionShellProps {
@@ -20,7 +20,7 @@ interface SectionShellProps {
 
 export function SectionShell({
   id,
-  tone = "paper",
+  tone = "white",
   florals = false,
   tall = true,
   className = "",
@@ -29,14 +29,14 @@ export function SectionShell({
   return (
     <section
       id={id}
-      className={`paper-texture relative flex flex-col items-center justify-center overflow-hidden px-6 py-20 text-center ${
+      className={`relative flex flex-col items-center justify-center overflow-hidden px-6 py-20 text-center ${
         tall ? "min-h-[90svh]" : ""
       } ${TONES[tone]} ${className}`}
     >
       {florals && (
         <>
-          <Floral className="pointer-events-none absolute -top-4 -left-10 w-36 opacity-60 sm:w-48" />
-          <Floral className="pointer-events-none absolute -right-10 -bottom-4 w-36 rotate-180 opacity-60 sm:w-48" />
+          <Floral className="pointer-events-none absolute top-0 left-0 w-40 sm:w-56" />
+          <Floral className="pointer-events-none absolute right-0 bottom-0 w-40 rotate-180 sm:w-56" />
         </>
       )}
       <div className="relative w-full max-w-md sm:max-w-lg">{children}</div>
@@ -56,7 +56,7 @@ export function SectionTitle({ top, script, bottom }: SectionTitleProps) {
     <h2 className="font-serif text-3xl leading-tight font-medium tracking-[0.1em] text-ink uppercase sm:text-4xl">
       <span className="block">{top}</span>
       {script && (
-        <span className="-my-1 block font-script text-3xl tracking-normal text-sage-dark normal-case sm:text-4xl">
+        <span className="-my-1 block font-script text-4xl tracking-normal text-ink normal-case sm:text-5xl">
           {script}
         </span>
       )}
@@ -67,7 +67,7 @@ export function SectionTitle({ top, script, bottom }: SectionTitleProps) {
 
 export function Divider() {
   return (
-    <div className="mx-auto my-6 flex items-center justify-center gap-3 text-gold" aria-hidden="true">
+    <div className="mx-auto my-6 flex items-center justify-center gap-3 text-sunflower-deep" aria-hidden="true">
       <span className="h-px w-12 bg-current opacity-60" />
       <span className="text-xs">✦</span>
       <span className="h-px w-12 bg-current opacity-60" />

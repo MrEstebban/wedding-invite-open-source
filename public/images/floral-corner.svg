@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300">
+  <!-- Esquina floral (girasoles, rosas moradas, flores lila y eucalipto). Se usa en la esquina superior izquierda; rotada 180° en la inferior derecha. -->
+  <defs>
+    <linearGradient id="sunPetal" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#e9a515"/>
+      <stop offset="0.45" stop-color="#fbcb2e"/>
+      <stop offset="1" stop-color="#ffe27a"/>
+    </linearGradient>
+    <radialGradient id="sunCenter">
+      <stop offset="0" stop-color="#2b170a"/>
+      <stop offset="0.7" stop-color="#5a3517"/>
+      <stop offset="1" stop-color="#7d4d21"/>
+    </radialGradient>
+    <radialGradient id="roseGrad" cx="0.45" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#6b3fa0"/>
+      <stop offset="0.55" stop-color="#9a73cf"/>
+      <stop offset="1" stop-color="#c9b3ea"/>
+    </radialGradient>
+    <radialGradient id="rosePetal" cx="0.5" cy="0.8" r="0.8">
+      <stop offset="0" stop-color="#7e55b5"/>
+      <stop offset="1" stop-color="#b99ae2"/>
+    </radialGradient>
+    <radialGradient id="blossomGrad" cx="0.5" cy="1" r="1">
+      <stop offset="0" stop-color="#b79de0"/>
+      <stop offset="1" stop-color="#efe6fb"/>
+    </radialGradient>
+    <linearGradient id="leafGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8fa38d"/>
+      <stop offset="1" stop-color="#c3d0c1"/>
+    </linearGradient>
+
+    <path id="petal" d="M0 -12 C -7 -22 -6 -40 0 -50 C 6 -40 7 -22 0 -12 Z"/>
+    <path id="leaf" d="M0 0 C 7 -5 7 -15 0 -22 C -7 -15 -7 -5 0 0 Z" fill="url(#leafGrad)" stroke="#71876f" stroke-width="0.7"/>
+
+    <g id="sunflower">
+      <g fill="#dc9612" opacity="0.9">
+        <use href="#petal" transform="rotate(10)"/><use href="#petal" transform="rotate(30)"/>
+        <use href="#petal" transform="rotate(50)"/><use href="#petal" transform="rotate(70)"/>
+        <use href="#petal" transform="rotate(90)"/><use href="#petal" transform="rotate(110)"/>
+        <use href="#petal" transform="rotate(130)"/><use href="#petal" transform="rotate(150)"/>
+        <use href="#petal" transform="rotate(170)"/><use href="#petal" transform="rotate(190)"/>
+        <use href="#petal" transform="rotate(210)"/><use href="#petal" transform="rotate(230)"/>
+        <use href="#petal" transform="rotate(250)"/><use href="#petal" transform="rotate(270)"/>
+        <use href="#petal" transform="rotate(290)"/><use href="#petal" transform="rotate(310)"/>
+        <use href="#petal" transform="rotate(330)"/><use href="#petal" transform="rotate(350)"/>
+      </g>
+      <g fill="url(#sunPetal)" stroke="#d48f0a" stroke-width="0.6">
+        <use href="#petal" transform="rotate(0)"/><use href="#petal" transform="rotate(20)"/>
+        <use href="#petal" transform="rotate(40)"/><use href="#petal" transform="rotate(60)"/>
+        <use href="#petal" transform="rotate(80)"/><use href="#petal" transform="rotate(100)"/>
+        <use href="#petal" transform="rotate(120)"/><use href="#petal" transform="rotate(140)"/>
+        <use href="#petal" transform="rotate(160)"/><use href="#petal" transform="rotate(180)"/>
+        <use href="#petal" transform="rotate(200)"/><use href="#petal" transform="rotate(220)"/>
+        <use href="#petal" transform="rotate(240)"/><use href="#petal" transform="rotate(260)"/>
+        <use href="#petal" transform="rotate(280)"/><use href="#petal" transform="rotate(300)"/>
+        <use href="#petal" transform="rotate(320)"/><use href="#petal" transform="rotate(340)"/>
+      </g>
+      <circle r="18" fill="url(#sunCenter)"/>
+      <circle r="16" fill="none" stroke="#9a6a2c" stroke-width="2.4" stroke-dasharray="1.4 2.2"/>
+      <circle r="10" fill="none" stroke="#1f1007" stroke-width="2" stroke-dasharray="1 2"/>
+    </g>
+
+    <g id="rose">
+      <circle r="30" fill="url(#roseGrad)"/>
+      <g fill="url(#rosePetal)" stroke="#6d449f" stroke-width="0.8">
+        <circle cx="0" cy="-19" r="12"/>
+        <circle cx="0" cy="-19" r="12" transform="rotate(60)"/>
+        <circle cx="0" cy="-19" r="12" transform="rotate(120)"/>
+        <circle cx="0" cy="-19" r="12" transform="rotate(180)"/>
+        <circle cx="0" cy="-19" r="12" transform="rotate(240)"/>
+        <circle cx="0" cy="-19" r="12" transform="rotate(300)"/>
+      </g>
+      <g fill="#8a5fc0" stroke="#5a338e" stroke-width="0.8">
+        <circle cx="0" cy="-9" r="9"/>
+        <circle cx="0" cy="-9" r="9" transform="rotate(72)"/>
+        <circle cx="0" cy="-9" r="9" transform="rotate(144)"/>
+        <circle cx="0" cy="-9" r="9" transform="rotate(216)"/>
+        <circle cx="0" cy="-9" r="9" transform="rotate(288)"/>
+      </g>
+      <circle r="7.5" fill="#64399b"/>
+      <path d="M-4 1 C -4 -5 4 -6 5 0 C 6 5 -2 7 -3 2 C -3 -1 2 -2 2 1" fill="none" stroke="#3a1a63" stroke-width="1.2" stroke-linecap="round"/>
+      <g fill="none" stroke="#d9c7f2" stroke-width="1" stroke-linecap="round" opacity="0.8">
+        <path d="M-8 -26 Q 0 -31 8 -26"/>
+        <path d="M18 -16 Q 24 -9 23 0" />
+        <path d="M-23 4 Q -22 12 -16 17"/>
+      </g>
+    </g>
+
+    <g id="blossom">
+      <g fill="url(#blossomGrad)" stroke="#a387cf" stroke-width="0.8">
+        <ellipse cx="0" cy="-11" rx="9" ry="12"/>
+        <ellipse cx="0" cy="-11" rx="9" ry="12" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-11" rx="9" ry="12" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-11" rx="9" ry="12" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-11" rx="9" ry="12" transform="rotate(288)"/>
+      </g>
+      <g stroke="#4b2a78" stroke-width="0.9" stroke-linecap="round">
+        <path d="M0 0 L0 -8"/><path d="M0 0 L7.6 -2.5"/><path d="M0 0 L4.7 6.5"/><path d="M0 0 L-4.7 6.5"/><path d="M0 0 L-7.6 -2.5"/>
+      </g>
+      <circle r="3.5" fill="#3e2168"/>
+    </g>
+  </defs>
+
+  <!-- Eucalipto -->
+  <path d="M70 32 C 120 10 180 14 252 30" fill="none" stroke="#71876f" stroke-width="1.4"/>
+  <use href="#leaf" transform="translate(118 19) rotate(40)"/>
+  <use href="#leaf" transform="translate(122 21) rotate(150)"/>
+  <use href="#leaf" transform="translate(160 15) rotate(45)"/>
+  <use href="#leaf" transform="translate(164 17) rotate(150)"/>
+  <use href="#leaf" transform="translate(202 18) rotate(50)"/>
+  <use href="#leaf" transform="translate(206 21) rotate(150)"/>
+  <use href="#leaf" transform="translate(250 30) rotate(100)"/>
+
+  <path d="M24 90 C 14 140 18 200 34 262" fill="none" stroke="#71876f" stroke-width="1.4"/>
+  <use href="#leaf" transform="translate(17 140) rotate(225)"/>
+  <use href="#leaf" transform="translate(18 142) rotate(140)"/>
+  <use href="#leaf" transform="translate(18 185) rotate(220)"/>
+  <use href="#leaf" transform="translate(19 187) rotate(140)"/>
+  <use href="#leaf" transform="translate(24 225) rotate(215)"/>
+  <use href="#leaf" transform="translate(25 227) rotate(145)"/>
+  <use href="#leaf" transform="translate(34 262) rotate(170)"/>
+
+  <use href="#leaf" transform="translate(112 112) rotate(120) scale(1.2)"/>
+  <use href="#leaf" transform="translate(96 140) rotate(165) scale(1.1)"/>
+
+  <!-- Bayas lila -->
+  <path d="M150 88 C 165 104 175 120 182 142" fill="none" stroke="#6f5a8f" stroke-width="1"/>
+  <g fill="#8b68c2" stroke="#5f3e93" stroke-width="0.6">
+    <circle cx="157" cy="97" r="3.3"/><circle cx="165" cy="107" r="3.5"/><circle cx="171" cy="118" r="3.6"/>
+    <circle cx="177" cy="130" r="3.6"/><circle cx="182" cy="142" r="3.8"/><circle cx="168" cy="99" r="2.8"/>
+    <circle cx="176" cy="111" r="3"/><circle cx="184" cy="125" r="3.2"/><circle cx="162" cy="116" r="2.8"/>
+  </g>
+
+  <!-- Flores lila -->
+  <use href="#blossom" transform="translate(208 66) scale(1.1) rotate(10)"/>
+  <use href="#blossom" transform="translate(62 205) scale(0.95) rotate(-15)"/>
+
+  <!-- Rosas moradas -->
+  <use href="#rose" transform="translate(134 56) scale(1.1)"/>
+  <use href="#rose" transform="translate(82 128) scale(1)"/>
+  <use href="#rose" transform="translate(30 228) scale(0.75)"/>
+
+  <!-- Girasoles -->
+  <use href="#sunflower" transform="translate(150 6) scale(0.55) rotate(8)"/>
+  <use href="#sunflower" transform="translate(24 152) scale(0.78) rotate(-6)"/>
+  <use href="#sunflower" transform="translate(56 56) scale(1.15)"/>
+</svg>

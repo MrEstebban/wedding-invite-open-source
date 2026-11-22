@@ -9,7 +9,7 @@ export default function ErrorPage({ reset }: { error: Error & { digest?: string 
       <button
         type="button"
         onClick={reset}
-        className="mt-8 block w-full rounded-full bg-sage-dark px-6 py-3 font-sans text-sm text-cream transition hover:bg-sage"
+        className="mt-8 block w-full rounded-full bg-plum px-6 py-3 font-sans text-sm text-mist transition hover:bg-orchid"
       >
         Intentar de nuevo
       </button>

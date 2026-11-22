@@ -30,7 +30,7 @@ Con 128 bits de entropía, adivinar un token válido entre 300 invitados requier
 
 | Riesgo | Mitigación | Dónde |
 |---|---|---|
-| Fuga del token vía `Referer` al abrir Google Maps o la mesa de regalos | `Referrer-Policy: no-referrer` + `rel="noreferrer"` | `next.config.ts`, componentes |
+| Fuga del token vía `Referer` al abrir Google Maps | `Referrer-Policy: no-referrer` + `rel="noreferrer"` | `next.config.ts`, componentes |
 | Indexación de invitaciones en buscadores | `robots: noindex` + `X-Robots-Tag` | `layout.tsx`, `next.config.ts` |
 | Caché compartida de una invitación | Página `force-dynamic` (Next envía `Cache-Control: private, no-store`) | `invite/[token]/page.tsx` |
 | Superar el máximo de asistentes | Selector limitado en UI + validación en servidor con el máximo leído de la hoja | `RsvpForm.tsx`, `api/rsvp/route.ts` |

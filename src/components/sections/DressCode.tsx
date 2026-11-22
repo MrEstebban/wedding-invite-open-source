@@ -1,33 +1,21 @@
+import Image from "next/image";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionShell, SectionTitle } from "@/components/ui/SectionShell";
 import { event } from "@/config/event";
 
-function GownFigure() {
-  return (
-    <svg viewBox="0 0 100 200" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="mx-auto h-56 w-auto" aria-hidden="true">
-      <circle cx="50" cy="20" r="9" />
-      <path d="M44 14c-6 6-6 20-2 28M56 14c5 6 5 14 3 20" />
-      <path d="M47 29v6M53 29v6" />
-      <path d="M38 40c4-4 20-4 24 0l-3 26H41z" />
-      <path d="M38 40l-7 26 4 6M62 40l7 26-4 6" />
-      <path d="M41 66c-6 30-16 70-24 118h66c-8-48-18-88-24-118" />
-      <path d="M48 72c-3 40-8 80-14 112M53 72c3 40 9 80 17 112" opacity="0.5" />
-    </svg>
-  );
-}
-
 function SuitFigure() {
   return (
-    <svg viewBox="0 0 100 200" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="mx-auto h-56 w-auto" aria-hidden="true">
-      <circle cx="50" cy="20" r="9" />
-      <path d="M41 16c2-8 16-8 18 0" />
-      <path d="M46 29v6h8v-6" />
-      <path d="M34 40l16-5 16 5 3 60H31z" />
-      <path d="M50 35l-6 20 6 12 6-12z" />
-      <path d="M48 38h4l-2 4z" />
-      <path d="M34 40l-6 58M66 40l6 58" />
-      <path d="M36 100l3 82h9l2-68 2 68h9l3-82" />
-      <path d="M36 184h12M52 184h12" />
+    <svg viewBox="0 0 100 230" fill="none" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" strokeLinejoin="round" className="mx-auto h-64 w-auto" aria-hidden="true">
+      <ellipse cx="50" cy="20" rx="8" ry="10" />
+      <path d="M43 15c2-7 12-7 14 0" />
+      <path d="M46 29v6M54 29v6" />
+      <path d="M33 42l17-6 17 6 3 68H30z" />
+      <path d="M50 36l-7 22 7 14 7-14z" />
+      <path d="M48 40h4l-1 4h-2z" />
+      <path d="M49 44l-1.5 16 2.5 4 2.5-4-1.5-16" />
+      <path d="M33 42l-6 64M67 42l6 64" />
+      <path d="M36 110l3 104h9l2-84 2 84h9l3-104" />
+      <path d="M37 216h12M51 216h12" />
     </svg>
   );
 }
@@ -37,20 +25,38 @@ export function DressCode() {
   if (!dressCode) return null;
 
   return (
-    <SectionShell tone="taupe">
+    <SectionShell tone="lilac">
       <Reveal>
         <SectionTitle top={dressCode.title} />
-        <p className="mt-4 text-lg text-ink-soft italic">{dressCode.note}</p>
+        <p className="mt-4 text-lg text-ink italic">{dressCode.note}</p>
       </Reveal>
 
-      <div className="mt-12 grid grid-cols-2 gap-6 text-ink">
+      <Reveal delay={100} className="mt-8">
+        <h3 className="font-sans text-xs tracking-[0.25em] text-ink uppercase">Colores reservados</h3>
+        <ul className="mt-4 flex justify-center gap-2" aria-label="Morados y amarillos">
+          {dressCode.reservedColors.swatches.map((color) => (
+            <li key={color} className="size-8 rounded-full ring-1 ring-ink/15" style={{ backgroundColor: color }} />
+          ))}
+        </ul>
+        <p className="mx-auto mt-4 max-w-xs text-lg text-ink-soft">{dressCode.reservedColors.text}</p>
+      </Reveal>
+
+      <div className="mt-12 grid grid-cols-2 items-end gap-6 text-ink">
         <Reveal delay={150}>
-          <GownFigure />
-          <p className="mt-4 text-lg">{dressCode.women}</p>
+          <Image
+            src={dressCode.women.image}
+            alt="Ilustración de un vestido de cóctel"
+            width={345}
+            height={800}
+            sizes="140px"
+            // The drawing has an off-white background; multiply blends it into the section.
+            className="mx-auto h-64 w-auto mix-blend-multiply"
+          />
+          <p className="mt-4 text-lg">{dressCode.women.label}</p>
         </Reveal>
         <Reveal delay={300}>
           <SuitFigure />
-          <p className="mt-4 text-lg">{dressCode.men}</p>
+          <p className="mt-4 text-lg">{dressCode.men.label}</p>
         </Reveal>
       </div>
     </SectionShell>
